@@ -1,0 +1,3 @@
+EMAIL = "your_linkedin_email"  
+PASSWORD = "your_linkedin_password"  
+PHONE = "your_phone_number" 
