@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Poster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-image: url('{{ background }}');">
+    <div class="overlay">
+        <div class="poster">
+            <h1>💡 Daily Motivation</h1>
+            <div class="quote">
+                <p class="quote-text">"{{ quote.text }}"</p>
+                <p class="quote-author">— {{ quote.author }}</p>
+            </div>
+            <a href="/" class="btn">Get New Quote 🔄</a>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Poster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-image: url('{{ background }}');">
+    <div class="overlay">
+        <div class="poster">
+            <h1>💡 Daily Motivation</h1>
+            <div class="quote">
+                <p class="quote-text">"{{ quote.text }}"</p>
+                <p class="quote-author">— {{ quote.author }}</p>
+            </div>
+            <a href="/" class="btn">Get New Quote 🔄</a>
+        </div>
+    </div>
+</body>
+</html>
