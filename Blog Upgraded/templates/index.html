@@ -1,0 +1,20 @@
+{% include "header.html" %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Latest Posts</h1>
+    <div class="row">
+        {% for post in all_posts %}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">{{ post.title | title }}</h5>
+                    <p class="card-text text-muted">{{ post.body[:80] }}...</p>
+                    <a href="/post/{{ post.id }}" class="btn btn-dark btn-sm">Read More →</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include "footer.html" %}
