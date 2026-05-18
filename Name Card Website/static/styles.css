@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    width: 380px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #e94560, #0f3460);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0 auto 20px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #e94560;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.location {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9em;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 25px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.skill-tags span {
+    background: rgba(233, 69, 96, 0.2);
+    border: 1px solid rgba(233, 69, 96, 0.4);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+}
+
+.projects ul {
+    list-style: none;
+    text-align: left;
+}
+
+.projects ul li {
+    padding: 8px 0;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.95em;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.links a:hover {
+    background: #e94560;
+    border-color: #e94560;
+}
