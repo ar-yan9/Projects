@@ -1,0 +1,26 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.btn {
+    border-radius: 25px;
+}
+
+h1 {
+    color: #333;
+    font-weight: bold;
+}
