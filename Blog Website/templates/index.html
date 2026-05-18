@@ -1,0 +1,14 @@
+{% include "header.html" %}
+
+<div class="container">
+    <h2>All Posts</h2>
+    {% for post in all_posts %}
+        <div class="post-card">
+            <h3>{{ post.title | title }}</h3>
+            <p>{{ post.body[:100] }}...</p>
+            <a href="/post/{{ post.id }}">Read More →</a>
+        </div>
+    {% endfor %}
+</div>
+
+{% include "footer.html" %}
