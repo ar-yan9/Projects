@@ -1,0 +1,21 @@
+{% include "header.html" %}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <img src="{{ post.img_url }}" class="card-img-top" alt="{{ post.title }}" style="height: 300px; object-fit: cover;">
+                <div class="card-body p-5">
+                    <h1 class="text-danger mb-2">{{ post.title }}</h1>
+                    <h4 class="text-muted mb-3">{{ post.subtitle }}</h4>
+                    <p class="text-muted"><small>By {{ post.author }} | {{ post.date }}</small></p>
+                    <hr>
+                    <p class="lead">{{ post.body }}</p>
+                    <a href="/" class="btn btn-dark mt-3">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "footer.html" %}

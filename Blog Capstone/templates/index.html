@@ -1,0 +1,22 @@
+{% include "header.html" %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">My Blog</h1>
+    <div class="row">
+        {% for post in all_posts %}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow">
+                <img src="{{ post.img_url }}" class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">{{ post.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ post.subtitle }}</h6>
+                    <p class="card-text text-muted"><small>By {{ post.author }} | {{ post.date }}</small></p>
+                    <a href="/post/{{ post.id }}" class="btn btn-dark btn-sm">Read More →</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include "footer.html" %}
